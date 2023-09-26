@@ -1,18 +1,23 @@
-p {
-    margin: 10 10 10 10;
-}
-ul li {
-    display: inline;
-}
-h1 {
-    background: rgb(0, 162, 255);
-    color: red;
-}
+
 body {
-    text-align: center;
     background-color: rgb(104, 101, 101);
     background-image: linear-gradient(to left, #278dec 0%, black 100%);
     }
 header {
     border: solid;
+}
+
+.box-logo {
+    width: 150px;
+    height: 150px;
+    box-sizing:border-box;
+    display: inline;
+}
+.opcion {
+    display: inline;
+    align-content:end;
+    
+}
+#logo {
+    position:static;
 }
