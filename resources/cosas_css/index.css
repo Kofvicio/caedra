@@ -1,23 +1,8 @@
-
-body {
-    background-color: rgb(104, 101, 101);
-    background-image: linear-gradient(to left, #278dec 0%, black 100%);
-    }
-header {
-    border: solid;
+#body {
+    background-color: aqua;
+    font-size: medium;
 }
 
-.box-logo {
-    width: 150px;
-    height: 150px;
-    box-sizing:border-box;
-    display: inline;
-}
-.opcion {
-    display: inline;
-    align-content:end;
-    
-}
-#logo {
-    position:static;
+.filtro {
+    filter: brightness(70%);
 }

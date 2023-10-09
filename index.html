@@ -12,12 +12,140 @@
 </head>
 <body>
     <header>
-       <nav class="container">
-            <div class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg" id="logo">
-                <img src="./resources/img/CAEDRAACADEMYFONT2_Mesa_de_trabajo_1.png" alt="caedra" width="120" height="80">
+        <nav class="navbar navbar-dark bg-black navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html"><img src="./resources/img/CAEDRAACADEMYFONT2_Mesa_de_trabajo_1.png" alt="Caedra academy" width="120" height="80">Caedra A.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a href="#la-escuela" class="nav-link active" aria-current="page">La Escuela</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sensei" class="nav-link active" aria-current="page">Los Sensei</a>
+                            </li><li class="nav-item">
+                                <a href="#lugar" class="nav-link active" aria-current="page">Lugar</a>
+                            </li><li class="nav-item">
+                                <a href="#for" class="nav-link active" aria-current="page">Se un alumno</a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
             </div>
-       </nav>
+        </nav>
     </header>
+    <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./resources/img/escuela.png" class="d-block w-100 bg-opacity-100 filtro" alt="Escuela Caedra">
+                <div class="carousel-caption d-flex text-lg-center d-md-block text-white">
+                    <h5 id="la-escuela">Caedra Academy</h5>
+                    <p class="">En esta escuela tan particular los alumnos no solo aprenderan a ser alumnos de elite sino tambien alumnos aptos para el combate, ya que en esta escuela incentivamos a las peleas honorables y les damo una educacion estricta y adeucada para su uso correcto.</p>
+                    <p><a class="btn btn-outline-light mb-3" href="#formulario">¡Quiero ser alumno!</a></p>
+                </div>
+            </div>
+    </div>
+    <div class="container mt-5" id="sensei">
+        <div class="row justify-content-between">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Raphael Santos</h5>
+                        <img src="./resources/img/santos.png" class= "card-img" alt="Santos">
+                        <p class="card-text">Es el director de Caedra y por consiguiente es quien se responsabiliza y asegura que los alumnos tengan una buena educacion sana y violenta</p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Secretaria de Santos</h5>
+                        <img src="./resources/img/laurence.png" class="card-img" alt="Laurence">
+                        <p class="card-text">Se encarga de la administracion y logistica de la isla de Caedra, tambien en dar asistencia y apoyo a los sensei</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Los Sensei</h5>
+                        <img src="./resources/img/xana.png" alt="Sensei" class="card-img">
+                        <p class="card-text">Son quienes se podria ser los maestros de clase, no solo les educaran con las artes marciales sino tambien con la educacion avanzada de preparatoria,asi es, estos maestros del combate tambien son personas que se han recibido en ramas educativas importantes para el futuro de los jovenes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="mb-4" id="lugar">
+        <div class="container mt-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4">
+                    <img src="./resources/img/dojo.png" alt="Imagen" class="img-fluid">
+                </div>
+                <div class="col-md text-light bg-primary">
+                    <h2>La Isla De Caedra</h2>
+                    <p>En la isla de Caedra se encuentra ubicado al sur-oeste de japón un tanto alejado de las demas pequeños grupos de islas, se consideraba tiempo atras que esta isla no poseia ningun tipo de riqueza comercial ya sea maritima como terrestre, no poseia muchos minerales y su calidad de pesca era bastante mala, pero gracias a la empresa Harper Corp. </p>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    <div class="container mt-5">
+        <div class="row justify-content-center" id="formulario">
+            <div class="container col-md-6">
+                <h1>¿Quieres ser Alumno?</h1>
+                <h3>¡UNETE A NOSOTROS!</h3>
+            </div>
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" name="apellido" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="razon" class="form-label">¿Por que Crees que deberias estar en la escuela?</label>
+                        <textarea class="form-control" id="razon" name="razon" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
+<footer id="main-footer">
+    <div class="container bg-black w-0">
+        <ul class="nav justify-content-center justify-content-lg-between align-items-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Preguntas <span>frecuentes</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contáctanos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Prensa</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Conferencias</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Términos y <span>condiciones</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Privacidad</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Estudiantes</a>
+            </li>
+        </ul>
+    </div>
+</footer>
 </html>
