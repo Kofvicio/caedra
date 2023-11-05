@@ -31,6 +31,9 @@
                             </li><li class="nav-item">
                                 <a href="#for" class="nav-link active" aria-current="page">Se un alumno</a>
                             </li>
+                        </li><li class="nav-item">
+                            <a href="#compra" class="nav-link active bg-primary" aria-current="page">ticket</a>
+                        </li>
                             </li>
                         </ul>
                     </div>
@@ -119,7 +122,32 @@
                 </form>
             </div>
         </div>
+    </div class= "container mt-5">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <h1 id="compra">Calculadora de Descuentos</h1>
+                <form id="descuentoForm">
+                    <div class="mb-3">
+                        <label for="porcentaje" class="form-label">Descuento para </label>
+                        <select class="form-select" id="porcentaje" name="porcentaje">
+                            <option value="5">docente o empleado de Harper (5%)</option>
+                            <option value="10"> pre-matriculado (10%)</option>
+                            <option value="15">Becario (15%)</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="calcularDescuento()">Calcular Descuento</button>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <h2>Resultado</h2>
+                <p id="resultado">Introduce los descuentos y presiona el botón para calcular.</p>
+                <button type="button" class="btn btn-outline-primary">Comprar</button>
+            </div>
+            
+        </div>
     </div>
+
 </body>
 <footer id="main-footer">
     <div class="container bg-black w-0">
@@ -148,4 +176,5 @@
         </ul>
     </div>
 </footer>
+<script src="/resources/javascript/script.js"></script>
 </html>
